@@ -1,0 +1,112 @@
+/* COMMON SETTINGS */
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca";
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+img{
+    width: 35%;
+    margin-bottom: 15%;
+}
+.card-group{
+    margin: 12% auto;
+}
+.card-title{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    font-size: 3rem;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+}
+.card-body{
+    padding: 0;
+}
+.card-link{
+    background-color: hsl(0, 0%, 95%);
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    padding: 4% 10%;
+    text-decoration: none;
+    margin-top: 35%;
+    margin-bottom: 20%;
+    font-size: 1rem;
+}
+.link1{
+    color: hsl(31, 77%, 52%);
+}
+.link2{
+    color: hsl(184, 100%, 22%);
+}
+.link3{
+    color: hsl(179, 100%, 13%);
+}
+.card-link:hover{
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+/* LARGER SCREENS */
+@media (min-width:1200px){
+    .card-group{
+        width: 50%;
+    }
+    .sedans, .suvs, .luxury{
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    }
+}
+
+
+/* MEDIUM SCREENS */
+@media (max-width:1200px) and (min-width:575px){
+    .card-group{
+        width: 95%;
+    }
+    .sedans, .suvs, .luxury{
+        padding-top: 3%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+
+/* SMALL SCREENS */
+@media (max-width:575px) {
+    
+    .card-group{
+        width: 65%;
+    }
+    .sedans, .suvs, .luxury{
+        padding-top: 10%;
+        padding-right: 12%;
+        padding-left: 12%;
+    }
+    .suvs, .luxury{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .sedans, .suvs{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .card-link{
+        margin-top: 5%;
+    }
+    img{
+        width: 25%;
+    }
+}
